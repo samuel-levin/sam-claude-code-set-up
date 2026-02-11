@@ -1,0 +1,26 @@
+# Cache and temporary files
+cache/
+debug/
+paste-cache/
+session-env/
+shell-snapshots/
+stats-cache.json
+statsig/
+telemetry/
+
+# Session data (potentially sensitive)
+history.jsonl
+file-history/
+tasks/
+todos/
+plans/
+
+# Personal config and plugins
+config.json
+plugins/
+ide/
+projects/
+
+# Keep these tracked:
+# skills/ - Your custom automation skills
+# settings.json - Global settings (if not sensitive)
