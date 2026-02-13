@@ -1,0 +1,5 @@
+[2026-02-12 12:05:48] Context compaction triggered
+[2026-02-13 10:56:54] Context compaction triggered
+[2026-02-13 11:12:25] Context compaction triggered
+[2026-02-13 16:06:03] Context compaction triggered
+[2026-02-13 16:08:28] Context compaction triggered

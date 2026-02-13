@@ -6,6 +6,8 @@ Use this skill when working on tickets or features in the x-darwin monorepo.
 
 This skill encodes personal knowledge about the x-darwin repo's structure, idiosyncrasies, and common patterns. It acts as a routing guide to help navigate the codebase effectively.
 
+**Goal:** Reach a state where ticket implementation can be fully automated. Every piece of knowledge added here reduces the need for human intervention. When you encounter something that required user correction or caused a wrong approach, it belongs in this guide.
+
 ## When to use
 
 - Starting work on a Jira ticket
@@ -19,6 +21,7 @@ This skill encodes personal knowledge about the x-darwin repo's structure, idios
 
    Based on the ticket/work, determine which docs to read:
    - **Always read:** [architecture.md](architecture.md) - Core patterns (POST-only APIs, NestJS structure, monorepo layout)
+   - **Always read:** [idiosyncrasies.md](idiosyncrasies.md) - Monorepo gotchas and workarounds
    - Creating new service/module/entity? → READ [creating-new-modules.md](creating-new-modules.md) - Step-by-step checklist
    - Console-API (BFF/GraphQL)? → READ [console-api-patterns.md](console-api-patterns.md)
    - Console-Web (Frontend)? → READ [console-web-patterns.md](console-web-patterns.md)
@@ -27,6 +30,7 @@ This skill encodes personal knowledge about the x-darwin repo's structure, idios
    - File exports (CSV/PDF)? → READ [file-export-patterns.md](file-export-patterns.md)
    - Jira ticket work? → READ [jira-conventions.md](jira-conventions.md)
    - BFF calling microservices? → READ [bff-microservice-communication.md](bff-microservice-communication.md)
+   - Application service validation/requirements? → READ [application-service-patterns.md](application-service-patterns.md)
 
 2. **Read and report (MANDATORY)**
 
@@ -52,28 +56,40 @@ This skill encodes personal knowledge about the x-darwin repo's structure, idios
    - User provides missing information
    - OR user says "proceed with what you have"
 
-3. **Work with the patterns**
+3. **Clarify testing expectations (MANDATORY)**
+
+   Almost every PR should include tests. Before starting implementation:
+   - Check the Jira ticket for any explicit testing requirements
+   - Ask the user: "What level/type of testing is expected for this change?"
+     - Unit tests? Integration tests? E2E tests?
+     - Which services/modules need test coverage?
+     - Are there existing test patterns to follow?
+   - Do not assume the testing scope — get confirmation before writing code
+
+4. **Work with the patterns**
    - Follow established patterns from the guide
    - Cite relevant patterns when explaining your approach
    - Don't reinvent approaches that are already documented
    - If deviating from guide patterns, explain why
 
-4. **Update guide with new learnings**
+5. **Update guide with new learnings**
 
    When user provides missing information:
    - Ask: "Should I add [this info] to [appropriate-file.md]?"
    - Add it clearly and concisely following the style guidelines
    - Note what was learned for future tickets
 
-5. **Before marking changes complete**
+6. **Before marking changes complete**
+   - Ensure tests are written per the agreed testing expectations from step 3
    - Invoke `/browser-testing` to validate changes in browser
    - Follow testing guidance for the type of change made
    - Report validation results before considering work done
 
-6. **Route to specialized knowledge when needed**
+7. **Route to specialized knowledge when needed**
    - Client config versioning workflow → Use [client-config-versioning.md](client-config-versioning.md) step-by-step
    - Browser testing → Invoke `/browser-testing` skill
    - PDF generation issues → (skill to be created)
+   - Application service validation/requirements → Use [application-service-patterns.md](application-service-patterns.md)
    - Account service → (skill to be created)
    - Loan processing → (skill to be created)
 

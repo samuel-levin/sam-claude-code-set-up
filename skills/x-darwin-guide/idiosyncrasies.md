@@ -32,18 +32,11 @@ If a dependent package fails to build (e.g., `@mantl/domain`), this is a blocker
 
 Don't try to work around dependency build failures by building packages in isolation.
 
-## Known Issues
+### Local type-check requires building dependencies first
 
-(Document gotchas as you discover them)
+`pnpm --filter @mantl/{service} type-check` runs `tsc` in isolation. If sibling packages aren't built, you'll get hundreds of false `TS2307: Cannot find module` errors. CI handles this automatically, but locally you must build first:
 
-## Common Mistakes
-
--
-
-## Quirks to Remember
-
--
-
-## Workarounds
-
--
+```bash
+pnpm turbo --filter=@mantl/{service} build   # builds service + all deps
+pnpm --filter @mantl/{service} type-check    # now works correctly
+```

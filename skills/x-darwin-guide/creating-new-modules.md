@@ -133,6 +133,12 @@ throw new NotFoundError({ message: '...', attributes: { id, clientId } })
 throw new InvalidArgumentError({ message: '...', attributes: { ... } })
 ```
 
+### 8. Tenant Scoping (`clientId`)
+**Every entity needs `clientId`** — including join/bridge tables. `clientId` is the tenant boundary. Even if a table like `relationship_beneficiary` joins two other entities (`beneficiary` + `account`), it still gets its own `client_id` column, index, and all get/delete/update operations must scope by it. Don't substitute a related foreign key (e.g. `accountId`) for tenant scoping.
+
+### 9. Joi Validation Runs Before Services
+`JoiValidationPipe` in the controller validates requests before the service method is called. Don't duplicate Joi constraints (e.g. range checks) in the service — invalid input never reaches it.
+
 ---
 
 ## File Structure Reference
@@ -178,6 +184,41 @@ Before considering implementation complete:
 - [ ] Controller validates with JoiValidationPipe
 
 ---
+
+## Testing Requirements
+
+**Tests are NOT optional.** Do not report implementation as complete without addressing tests.
+
+### Decision Process
+
+1. **Check the Jira ticket** for explicit test requirements — honor those first
+2. **Match sibling coverage** — if similar files in the same directory have tests, new files must too
+3. **Use judgment on volume** — prefer fewer, meaningful tests over exhaustive coverage. Cover the happy path, key error paths, and any non-obvious branching logic. Skip trivial getter/setter tests
+
+### What's Tested vs Not (as of the current codebase)
+
+| Layer | Tested? | Test Location |
+|-------|---------|---------------|
+| Microservice handlers/services | Yes | `src/{service}/src/test/unit/` |
+| Execution handlers (app-service) | Yes | `src/application-service/src/test/unit/application-execution-handlers/` |
+| Execution handlers (IOI service) | Yes | `src/indication-of-interest-service/src/test/unit/indication-of-interest-execution-handlers/` |
+| Transport-http-client services | No | N/A |
+| HTTP controllers | No | N/A |
+
+### Test Pattern
+
+- Uses `@nestjs/testing` `Test.createTestingModule()` with mock providers
+- Each service directory has a `helpers.ts` with shared module setup (`createUnitTestingModule`, `resolveExecuteDependencies`)
+- Mock HTTP services from `@mantl/nest-core` mock utilities
+- Jest spies with `jest.spyOn()` + `mockImplementation()` / `mockResolvedValue()`
+- `jest.resetAllMocks()` in `beforeEach`
+- Test entity data from `@mantl/mantl-test-data` `entityMocks`
+
+### Reporting
+
+When completing a task, report:
+- **Tests written:** what was covered and why
+- **Tests skipped:** what additional tests could exist but were judged unnecessary, and why
 
 ## When You Need More Detail
 
