@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/samuellevin/.claude/hooks/x-darwin-router.sh:*)",
+      "Bash(echo:*)",
+      "Bash(ls:*)",
+      "Bash(source:*)"
+    ]
+  }
+}
