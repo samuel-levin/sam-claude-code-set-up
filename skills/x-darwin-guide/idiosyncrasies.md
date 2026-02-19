@@ -32,6 +32,38 @@ If a dependent package fails to build (e.g., `@mantl/domain`), this is a blocker
 
 Don't try to work around dependency build failures by building packages in isolation.
 
+### Git worktrees need vault secrets for tests
+
+New git worktrees don't have `secrets.json` files, which contain Redis config and other service credentials. Without them, any test that imports `@mantl/nest-core` will fail with `Host and port must be provided` from `RedisClientModule.register()`.
+
+Fix: run `vault-pull` for the service you're testing:
+```bash
+pnpm --filter @mantl/application-service vault-pull
+```
+
+Each service has its own vault-pull config. Check the service's `package.json` for the exact script.
+
+### Running tests
+
+Use `pnpm --filter` with the test filename (no `--testPathPattern` or `--` needed):
+```bash
+pnpm --filter @mantl/application-service test some-test.unit.spec.ts
+pnpm --filter @mantl/domain test getApplicationScopes.spec.ts
+```
+
+### Domain package tests need extra memory
+
+`@mantl/domain` uses `ts-jest` and the package is large enough to exceed the default Node heap limit, causing a SIGABRT crash. This is worse in fresh worktrees with no Jest cache. Prefix with extra memory:
+```bash
+NODE_OPTIONS='--max-old-space-size=5120' pnpm --filter @mantl/domain test someTest.spec.ts
+```
+
+The domain `test:ci` script already sets this, but the local `test` script does not.
+
+### `ConsumerDepositCreateAccount` scope is deprecated
+
+Use `createAccount` instead of `consumerDepositCreateAccount` in scopes. The `ConsumerDeposit`-prefixed variants are deprecated throughout the system. When writing tests or referencing scopes, always use the unprefixed form (e.g., `createAccount`, not `consumerDepositCreateAccount`).
+
 ### Local type-check requires building dependencies first
 
 `pnpm --filter @mantl/{service} type-check` runs `tsc` in isolation. If sibling packages aren't built, you'll get hundreds of false `TS2307: Cannot find module` errors. CI handles this automatically, but locally you must build first:
