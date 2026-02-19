@@ -46,6 +46,21 @@ The two main validation services assemble requirements/required actions differen
 
 When wiring a new eval service into both flows, adapt to each flow's assembly pattern rather than forcing uniformity.
 
+## CDASO Multi-Joint Owner: Beware Per-Person Duplication
+
+In the CDASO validate service, `getMultiJointOwnersData` calls `getPersonDataWithPersonId` in a loop for each joint owner. Any data fetching or required action generation inside `getPersonDataWithPersonId` runs N times.
+
+When adding cross-cutting concerns (e.g., IOI detection, beneficiary logic), hoist them to `getMultiJointOwnersData` or the top-level method — not inside `getPersonDataWithPersonId`. The review service already follows this pattern (single fetch at top level).
+
+## Scope-Filtering Required Actions: Attestations AND Signatures
+
+When filtering required actions to a specific scope (e.g., `hasBeneficiary`), both attestations and signatures must be post-filtered via `qualifyingScopes`:
+
+- Attestations: `config.attestationTypes[id].qualifyingScopes`
+- Signatures: `config.agreements[id].qualifyingScopes`
+
+Both follow the same pattern. It's easy to filter one and forget the other.
+
 ## Eval Service Structure
 
 All eval services follow:

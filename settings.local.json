@@ -4,7 +4,9 @@
       "Bash(/Users/samuellevin/.claude/hooks/x-darwin-router.sh:*)",
       "Bash(echo:*)",
       "Bash(ls:*)",
-      "Bash(source:*)"
+      "Bash(source:*)",
+      "Bash(gh repo view:*)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

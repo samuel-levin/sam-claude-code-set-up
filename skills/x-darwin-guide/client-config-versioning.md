@@ -170,6 +170,10 @@ Before creating your PR:
 
 This is why versioning changes must be in a separate commit!
 
+### Version Must Be Sequential
+
+The `lock:validation-schema` script enforces that `CONFIG_SCHEMA_VERSION` equals `latestLockedVersion + 1`. You cannot skip numbers. Determine the correct next version by checking the latest file in `packages/client-config/src/validation/locked-schemas/`, not by looking at commit messages on integration.
+
 ### Test Failures
 
 If `test:configuration-versioning` fails:
