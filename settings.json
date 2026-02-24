@@ -1,5 +1,10 @@
 {
   "model": "opus",
+  "permissions": {
+    "ask": [
+      "mcp__x_darwin_tools__update_client_config"
+    ]
+  },
   "enabledPlugins": {
     "atlassian@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,

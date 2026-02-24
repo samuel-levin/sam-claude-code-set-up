@@ -1,37 +1,43 @@
+---
+name: browser-testing
+description: Interactive browser-based testing of MANTL console features using Playwright MCP tools. Use after building a feature to validate it works end-to-end in a running dev environment.
+---
+
 # Browser Testing Skill
 
-Use this skill to validate code changes in the browser before marking work complete.
+## Overview
 
-## When to Use
+Validate MANTL console features interactively using Playwright MCP tools against a running local dev environment. This is NOT about writing standalone test files — it's about Claude driving a browser session to verify features work.
 
-After making code changes, before considering the work done.
+## Prerequisites
 
-## Instructions
+- Dev environment running (`pnpm dev:conf` or equivalent)
+- Playwright MCP tools available (`browser_navigate`, `browser_snapshot`, `browser_click`, etc.)
+- Access to psql for database queries
 
-1. **Understand what changed**
-   - Identify the feature area, component, or functionality modified
+## Workflow
 
-2. **Check for existing guidance**
-   - Look through the supporting .md files in this skill for relevant testing guidance
-   - Check if the type of change has documented test procedures
+1. **Understand what to test** — identify the feature, expected UI location, and data requirements
+2. **Set up test data** — use psql to verify/create necessary data (clients, accounts, config)
+3. **Navigate to the feature** — log in, select tenant, navigate to the right page
+4. **Interact and verify** — fill forms, click buttons, check results
+5. **Debug failures** — if something doesn't work, investigate (check console errors, query DB, inspect GraphQL responses)
+6. **Report results** — summarize what worked, what didn't, and any bugs found
 
-3. **Check for related e2e tests**
-   - See [e2e-test-mapping.md](e2e-test-mapping.md) for references to existing end-to-end tests
-   - E2e tests show the expected flow
-   - Read the test to understand the validation steps
-   - Generalize the test steps for manual browser validation
+## Key Principles
 
-4. **When no guidance exists**
-   - Ask the user: "How should I validate [this change] in the browser?"
-   - Follow their instructions
-   - Use Playwright tools if appropriate (see [playwright-usage.md](playwright-usage.md))
+- **Use `browser_snapshot` over `browser_take_screenshot`** — snapshots return an accessibility tree with ref IDs you can interact with. Screenshots are just images.
+- **Wait for page loads** — use `browser_wait_for` after navigation. Pages can be slow locally.
+- **One action at a time** — click, then snapshot to see the result. Don't chain actions blindly.
+- **Debug then report** — if something fails, investigate autonomously (check console, query DB, inspect network). Attempt one fix. If still broken, report findings.
 
-5. **Report validation results**
-   - What you tested
-   - What you observed
-   - Any issues or unexpected behavior
+## Knowledge Files
 
-6. **Update the skill**
-   - After receiving testing guidance, propose adding it to this skill
-   - Suggest which file should be updated with the generalized testing information
-   - Keep documentation focused on reusable patterns, not one-off validations
+- `knowledge/database-patterns.md` — How to query and modify MANTL data via psql
+- `knowledge/navigating-the-ui.md` — How to navigate the MANTL console with Playwright MCP tools
+
+## Environment
+
+- **Console URL:** `http://console.mantl.localhost`
+- **Default credentials:** `mantl+admin@mantl.com` / `M@nt1`
+- **Database:** PostgreSQL accessible via `psql` (default local connection)

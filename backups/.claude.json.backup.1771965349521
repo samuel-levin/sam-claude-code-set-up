@@ -1,0 +1,743 @@
+{
+  "numStartups": 145,
+  "installMethod": "global",
+  "autoUpdates": true,
+  "preferredNotifChannel": "notifications_disabled",
+  "verbose": true,
+  "hasSeenTasksHint": true,
+  "customApiKeyResponses": {
+    "approved": [],
+    "rejected": [
+      "YOUR_KEY_HERE",
+      "vrFRlXJF8fQ-jBX99QAA"
+    ]
+  },
+  "tipsHistory": {
+    "new-user-warmup": 7,
+    "plan-mode-for-complex-tasks": 145,
+    "memory-command": 143,
+    "theme-command": 129,
+    "status-line": 128,
+    "stickers-command": 3,
+    "prompt-queue": 36,
+    "enter-to-steer-in-relatime": 129,
+    "todo-list": 130,
+    "install-github-app": 143,
+    "install-slack-app": 143,
+    "drag-and-drop-images": 144,
+    "paste-images-mac": 145,
+    "double-esc-code-restore": 145,
+    "continue": 145,
+    "shift-tab": 145,
+    "image-paste": 130,
+    "desktop-app": 144,
+    "web-app": 144,
+    "mobile-app": 144,
+    "shift-enter": 140,
+    "ide-upsell-external-terminal": 15,
+    "custom-agents": 144,
+    "agent-flag": 144,
+    "permissions": 144,
+    "rename-conversation": 133,
+    "custom-commands": 133,
+    "git-worktrees": 133
+  },
+  "promptQueueUseCount": 111,
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_tool_pear": false,
+    "tengu_prompt_suggestion": true
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": true,
+    "tengu_scratch": false,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_opus_default_pro_plan": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_event_sampling_config": {},
+    "tengu_tool_pear": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false,
+    "tengu_vscode_review_upsell": false,
+    "tengu_vscode_onboarding": false,
+    "tengu_tool_search_unsupported_models": [
+      "haiku"
+    ],
+    "tengu_ant_attribution_header_new": true,
+    "tengu_streaming_tool_execution2": true,
+    "tengu_pid_based_version_locking": true,
+    "tengu_sumi": true,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_react_vulnerability_warning": false,
+    "tengu_code_diff_cli": true,
+    "tengu_post_compact_survey": false,
+    "enhanced_telemetry_beta": false,
+    "tengu_session_memory": false,
+    "tengu_bash_haiku_prefetch": true,
+    "tengu_brass_pebble": false,
+    "tengu_keybinding_customization": false,
+    "tengu_claudeai_mcp_connectors": true,
+    "tengu_attribution_header": true,
+    "tengu_cache_plum_violet": true,
+    "tengu_plan_mode_interview_phase": false,
+    "tengu_permission_explainer": true,
+    "tengu_plank_river_frost": "user_intent",
+    "tengu_sm_compact": false,
+    "tengu_compact_streaming_retry": false,
+    "tengu_scarf_coffee": false,
+    "tengu_keybinding_customization_release": true,
+    "tengu_marble_kite": false,
+    "tengu_kv7_prompt_sort": true,
+    "tengu_plum_vx3": true,
+    "tengu_marble_anvil": true,
+    "tengu_coral_fern": true,
+    "tengu_file_write_optimization": true,
+    "tengu_oboe": true,
+    "tengu_penguins_enabled": true,
+    "tengu_chomp_inflection": true,
+    "tengu_mcp_elicitation": false,
+    "tengu_silver_lantern": false,
+    "tengu_pr_status_cli": true,
+    "tengu_copper_lantern": false,
+    "tengu_tst_kx7": false,
+    "tengu_tst_names_in_messages": false,
+    "tengu_marble_lantern_disabled": false,
+    "tengu_snippet_save": false,
+    "tengu_vinteuil_phrase": true,
+    "tengu_system_prompt_global_cache": true,
+    "tengu_bergotte_lantern": false,
+    "tengu_cork_m4q": true,
+    "tengu_compact_cache_prefix": true,
+    "tengu_fgts": false,
+    "tengu_birthday_hat": false,
+    "tengu_immediate_model_command": false,
+    "tengu_prompt_cache_1h_config": {
+      "allowlist": [
+        "repl_main_thread*",
+        "sdk"
+      ]
+    },
+    "tengu_penguins_off": null,
+    "tengu_quiet_fern": true,
+    "tengu_disable_streaming_to_non_streaming_fallback": false,
+    "tengu_slate_nexus": true,
+    "tengu_marble_sandcastle": true,
+    "tengu_birch_mist": false,
+    "tengu_oak_drum": false,
+    "tengu_destructive_command_warning": false,
+    "tengu_worktree_mode": true,
+    "tengu_pebble_leaf_prune": false,
+    "tengu_swann_brevity": "control",
+    "tengu_crystal_beam": {
+      "budgetTokens": 0
+    },
+    "tengu_tool_input_aliasing": false,
+    "tengu_mulberry_fog": false,
+    "tengu_moth_copse": false
+  },
+  "userID": "a0001fa19938149642c7cc1124c6a5d8e9cf6b999996107d17af3e3e766433a0",
+  "firstStartTime": "2025-07-16T16:24:44.097Z",
+  "projects": {
+    "/Users/samuellevin/x-darwin": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 4,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "application-validate-consumer-deposit-add-secondary-owner.service.ts",
+        "application-eval-indication-of-interest.service.ts",
+        "beneficiaryRequiredActions.ts",
+        "application-eval-attestation.service.ts",
+        "application-review-consumer-deposit-add-secondary-owner.service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1771959108853,
+      "lastTotalWebSearchRequests": 0,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 2.8368799999999985,
+      "lastAPIDuration": 299336,
+      "lastAPIDurationWithoutRetries": 299275,
+      "lastToolDuration": 9853,
+      "lastDuration": 1127102,
+      "lastLinesAdded": 74,
+      "lastLinesRemoved": 5,
+      "lastTotalInputTokens": 28317,
+      "lastTotalOutputTokens": 12379,
+      "lastTotalCacheCreationInputTokens": 171726,
+      "lastTotalCacheReadInputTokens": 2876953,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 28281,
+          "outputTokens": 641,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.031486
+        },
+        "claude-opus-4-6": {
+          "inputTokens": 36,
+          "outputTokens": 11738,
+          "cacheReadInputTokens": 2876953,
+          "cacheCreationInputTokens": 171726,
+          "webSearchRequests": 0,
+          "costUSD": 2.8053939999999993
+        }
+      },
+      "lastSessionId": "aec24018-c439-4d45-b823-e71317911639",
+      "lastSessionMetrics": {
+        "hook_duration_ms_count": 27,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 448,
+        "hook_duration_ms_avg": 287.14814814814815,
+        "hook_duration_ms_p50": 373,
+        "hook_duration_ms_p95": 407.2,
+        "hook_duration_ms_p99": 438.63999999999993,
+        "frame_duration_ms_count": 6001,
+        "frame_duration_ms_min": 1.710625000006985,
+        "frame_duration_ms_max": 623.31829200004,
+        "frame_duration_ms_avg": 4.563759348442084,
+        "frame_duration_ms_p50": 2.32893749998766,
+        "frame_duration_ms_p95": 3.5535205500083973,
+        "frame_duration_ms_p99": 5.78434192998373,
+        "pre_tool_hook_duration_ms_count": 18,
+        "pre_tool_hook_duration_ms_min": 365,
+        "pre_tool_hook_duration_ms_max": 452,
+        "pre_tool_hook_duration_ms_avg": 387.94444444444446,
+        "pre_tool_hook_duration_ms_p50": 384.5,
+        "pre_tool_hook_duration_ms_p95": 418.84999999999997,
+        "pre_tool_hook_duration_ms_p99": 445.36999999999995
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastFpsAverage": 10.12,
+      "lastFpsLow1Pct": 151.99
+    },
+    "/Users/samuellevin": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 11,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastToolDuration": 0,
+      "lastDuration": 4175,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {},
+      "lastSessionId": "65edbf91-5e01-4cac-9f0d-58c0184d13a9"
+    },
+    "/Users/samuellevin/.claude": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "x-darwin-tools": {
+          "type": "stdio",
+          "command": "node",
+          "args": [
+            "/Users/samuellevin/.claude/tools/x-darwin/mcp-server/index.mjs"
+          ],
+          "env": {}
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastCost": 0.000516,
+      "lastAPIDuration": 848,
+      "lastAPIDurationWithoutRetries": 847,
+      "lastToolDuration": 0,
+      "lastDuration": 3796611,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 341,
+      "lastTotalOutputTokens": 35,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 0.01,
+      "lastFpsLow1Pct": 77.35,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 341,
+          "outputTokens": 35,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.000516
+        }
+      },
+      "lastSessionId": "9d0851c8-3dd0-4174-9349-ba61085dd2c9",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 47,
+        "frame_duration_ms_min": 0.03200000012293458,
+        "frame_duration_ms_max": 12.927708000000166,
+        "frame_duration_ms_avg": 1.0106728510613527,
+        "frame_duration_ms_p50": 0.5887910000001284,
+        "frame_duration_ms_p95": 3.229508999934841,
+        "frame_duration_ms_p99": 10.048683460000124
+      },
+      "exampleFiles": [
+        "SKILL.md",
+        "idiosyncrasies.md",
+        "settings.json",
+        "application-service-patterns.md",
+        "creating-new-modules.md"
+      ],
+      "exampleFilesGeneratedAt": 1771522168599
+    },
+    "/Users/samuellevin/enh-3297": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "beneficiary.service.ts",
+        "relationship-beneficiary.service.ts",
+        "beneficiary.entity.ts",
+        "app.module.ts",
+        "products.ts"
+      ],
+      "exampleFilesGeneratedAt": 1770909082874,
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 31366,
+        "frame_duration_ms_min": 0.021959000267088413,
+        "frame_duration_ms_max": 256.9658749997616,
+        "frame_duration_ms_avg": 3.0029566859960126,
+        "frame_duration_ms_p50": 2.0699375001713634,
+        "frame_duration_ms_p95": 6.239254449587315,
+        "frame_duration_ms_p99": 9.06055658976547
+      },
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 10.385450599999997,
+      "lastAPIDuration": 1283727,
+      "lastAPIDurationWithoutRetries": 1283616,
+      "lastToolDuration": 391199,
+      "lastDuration": 8358273,
+      "lastLinesAdded": 187,
+      "lastLinesRemoved": 189,
+      "lastTotalInputTokens": 41325,
+      "lastTotalOutputTokens": 76597,
+      "lastTotalCacheCreationInputTokens": 670060,
+      "lastTotalCacheReadInputTokens": 11733152,
+      "lastTotalWebSearchRequests": 0,
+      "lastFpsAverage": 3.75,
+      "lastFpsLow1Pct": 102.11,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 36278,
+          "outputTokens": 18218,
+          "cacheReadInputTokens": 1229196,
+          "cacheCreationInputTokens": 157880,
+          "webSearchRequests": 0,
+          "costUSD": 0.44763759999999986
+        },
+        "claude-opus-4-6": {
+          "inputTokens": 5012,
+          "outputTokens": 55166,
+          "cacheReadInputTokens": 10275130,
+          "cacheCreationInputTokens": 455920,
+          "webSearchRequests": 0,
+          "costUSD": 9.391274999999997
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 35,
+          "outputTokens": 3213,
+          "cacheReadInputTokens": 228826,
+          "cacheCreationInputTokens": 56260,
+          "webSearchRequests": 0,
+          "costUSD": 0.546538
+        }
+      },
+      "lastSessionId": "4d1513c4-81dd-47b7-9401-352b4a73819d"
+    },
+    "/Users/samuellevin/enh-3296": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "clientConfiguration.ts",
+        "pdf.service.ts",
+        "create-account.handler.ts",
+        "fiserv-portico.adapter.ts",
+        "loan-offer.service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1771013217026,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 3.6614215999999984,
+      "lastAPIDuration": 337810,
+      "lastAPIDurationWithoutRetries": 337779,
+      "lastToolDuration": 241072,
+      "lastDuration": 342803000,
+      "lastLinesAdded": 28,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 20732,
+      "lastTotalOutputTokens": 16764,
+      "lastTotalCacheCreationInputTokens": 287360,
+      "lastTotalCacheReadInputTokens": 5087264,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 20673,
+          "outputTokens": 9131,
+          "cacheReadInputTokens": 1312846,
+          "cacheCreationInputTokens": 82104,
+          "webSearchRequests": 0,
+          "costUSD": 0.3002425999999999
+        },
+        "claude-opus-4-6": {
+          "inputTokens": 59,
+          "outputTokens": 7633,
+          "cacheReadInputTokens": 3774418,
+          "cacheCreationInputTokens": 205256,
+          "webSearchRequests": 0,
+          "costUSD": 3.3611789999999995
+        }
+      },
+      "lastSessionId": "c8e8ac0c-8a5e-4c68-8e9f-52dc715c4342",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 9882,
+        "frame_duration_ms_min": 0.06595799999922747,
+        "frame_duration_ms_max": 190.808583,
+        "frame_duration_ms_avg": 3.219535169879612,
+        "frame_duration_ms_p50": 1.8936245000077179,
+        "frame_duration_ms_p95": 12.713839400000811,
+        "frame_duration_ms_p99": 35.277862145304674
+      },
+      "lastFpsAverage": 0.03,
+      "lastFpsLow1Pct": 29.16
+    },
+    "/Users/samuellevin/ENH-3360": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "application-validate-consumer-deposit-add-secondary-owner.service.ts",
+        "application-eval-indication-of-interest.service.ts",
+        "beneficiaryRequiredActions.ts",
+        "application-eval-attestation.service.ts",
+        "clientConfiguration.ts"
+      ],
+      "exampleFilesGeneratedAt": 1771530530891,
+      "hasCompletedProjectOnboarding": true,
+      "lastCost": 29.54900260000004,
+      "lastAPIDuration": 3997001,
+      "lastAPIDurationWithoutRetries": 3996487,
+      "lastToolDuration": 2413940,
+      "lastDuration": 340542586,
+      "lastLinesAdded": 695,
+      "lastLinesRemoved": 84,
+      "lastTotalInputTokens": 228346,
+      "lastTotalOutputTokens": 185814,
+      "lastTotalCacheCreationInputTokens": 1119034,
+      "lastTotalCacheReadInputTokens": 45463079,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-opus-4-6": {
+          "inputTokens": 22090,
+          "outputTokens": 135501,
+          "cacheReadInputTokens": 39937728,
+          "cacheCreationInputTokens": 734603,
+          "webSearchRequests": 0,
+          "costUSD": 28.058107750000016
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 206256,
+          "outputTokens": 50313,
+          "cacheReadInputTokens": 5525351,
+          "cacheCreationInputTokens": 384431,
+          "webSearchRequests": 0,
+          "costUSD": 1.49089485
+        }
+      },
+      "lastSessionId": "6efb7dd7-e957-45e9-ba60-b181fdb684cc",
+      "lastFpsAverage": 0.51,
+      "lastFpsLow1Pct": 70.78,
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 173299,
+        "frame_duration_ms_min": 0.03404200077056885,
+        "frame_duration_ms_max": 1062815.1797090173,
+        "frame_duration_ms_avg": 21.70503938703567,
+        "frame_duration_ms_p50": 2.039520502090454,
+        "frame_duration_ms_p95": 10.473368719220158,
+        "frame_duration_ms_p99": 12.736969431042645,
+        "hook_duration_ms_count": 1144,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_max": 5064,
+        "hook_duration_ms_avg": 363.45454545454544,
+        "hook_duration_ms_p50": 50,
+        "hook_duration_ms_p95": 2166.85,
+        "hook_duration_ms_p99": 3951.119999999999,
+        "pre_tool_hook_duration_ms_count": 695,
+        "pre_tool_hook_duration_ms_min": 37,
+        "pre_tool_hook_duration_ms_max": 6478,
+        "pre_tool_hook_duration_ms_avg": 597.9625899280576,
+        "pre_tool_hook_duration_ms_p50": 79,
+        "pre_tool_hook_duration_ms_p95": 2245.5,
+        "pre_tool_hook_duration_ms_p99": 4332.319999999999
+      }
+    },
+    "/Users/samuellevin/ENH-3363": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "clientConfiguration.ts",
+        "types.ts",
+        "pdf.service.ts",
+        "request.ts",
+        "loan-offer.service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1771535786618,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/samuellevin/ENH-3364": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "clientConfiguration.ts",
+        "types.ts",
+        "pdf.service.ts",
+        "request.ts",
+        "loan-offer.service.ts"
+      ],
+      "exampleFilesGeneratedAt": 1771535900261,
+      "hasCompletedProjectOnboarding": true
+    },
+    "/Users/samuellevin/ENH-3361": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [
+        "AddConsumerDepositAddSecondaryOwnerApplication.ts",
+        "indicationOfInterest.ts",
+        "AddBeneficiaryWithSignaturesSheet.tsx",
+        "application-eval-relationship-person-account.service.ts",
+        "AccountManageBeneficiariesCard.tsx"
+      ],
+      "exampleFilesGeneratedAt": 1771884752768,
+      "hasCompletedProjectOnboarding": true
+    }
+  },
+  "iterm2SetupInProgress": false,
+  "iterm2BackupPath": "/Users/samuellevin/Library/Preferences/com.googlecode.iterm2.plist.bak",
+  "shiftEnterKeyBindingInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.42",
+  "subscriptionNoticeCount": 0,
+  "hasAvailableSubscription": false,
+  "changelogLastFetched": 1771964944939,
+  "fallbackAvailableWarningThreshold": 0.5,
+  "sonnet45MigrationComplete": true,
+  "s1mAccessCache": {
+    "ba584662-17c6-4d48-ab71-5bf808c5f589": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1769445895083
+    },
+    "ef36d8be-0ac0-43dd-8194-b9583c944c5a": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": true,
+      "timestamp": 1771352655977
+    }
+  },
+  "opus45MigrationComplete": true,
+  "thinkingMigrationComplete": true,
+  "opusProMigrationComplete": true,
+  "githubRepoPaths": {
+    "myfintech/x-darwin": [
+      "/Users/samuellevin/ENH-3361",
+      "/Users/samuellevin/ENH-3364",
+      "/Users/samuellevin/ENH-3363",
+      "/Users/samuellevin/ENH-3360",
+      "/Users/samuellevin/x-darwin"
+    ],
+    "samuel-levin/sam-claude-code-set-up": [
+      "/Users/samuellevin/.claude"
+    ]
+  },
+  "lastReleaseNotesSeen": "2.1.47",
+  "hasShownOpus45Notice": {
+    "ba584662-17c6-4d48-ab71-5bf808c5f589": true,
+    "ffaa327d-c871-41e7-bf0b-6efd6ec8591a": true
+  },
+  "cachedChromeExtensionInstalled": false,
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "claudeCodeFirstTokenDate": "2025-07-16T16:24:59.340954Z",
+  "anonymousId": "claudecode.v1.c40ad06b-ae64-4df2-a514-6cf40b46804c",
+  "groveConfigCache": {
+    "966631db-d0ac-43bc-a11a-82f44580c8e0": {
+      "grove_enabled": true,
+      "timestamp": 1769439437897
+    }
+  },
+  "s1mNonSubscriberAccessCache": {
+    "ffaa327d-c871-41e7-bf0b-6efd6ec8591a": {
+      "hasAccess": true,
+      "timestamp": 1771013215715
+    }
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1771953634577
+  },
+  "skillUsage": {
+    "superpowers:write-plan": {
+      "usageCount": 1,
+      "lastUsedAt": 1770226724158
+    },
+    "superpowers:writing-plans": {
+      "usageCount": 1,
+      "lastUsedAt": 1770226726946
+    },
+    "x-darwin-guide": {
+      "usageCount": 36,
+      "lastUsedAt": 1771884796009
+    },
+    "jira-ticket-plan": {
+      "usageCount": 6,
+      "lastUsedAt": 1771884785860
+    },
+    "everything-claude-code:code-review": {
+      "usageCount": 8,
+      "lastUsedAt": 1771876645008
+    },
+    "continuous-learning": {
+      "usageCount": 1,
+      "lastUsedAt": 1770913644330
+    },
+    "continuous-learning-v2": {
+      "usageCount": 1,
+      "lastUsedAt": 1770913951921
+    },
+    "everything-claude-code:plan": {
+      "usageCount": 7,
+      "lastUsedAt": 1771530716615
+    },
+    "superpowers:executing-plans": {
+      "usageCount": 2,
+      "lastUsedAt": 1771443205480
+    },
+    "update-x-darwin-guide": {
+      "usageCount": 5,
+      "lastUsedAt": 1771879886284
+    },
+    "superpowers:brainstorming": {
+      "usageCount": 1,
+      "lastUsedAt": 1771545822964
+    }
+  },
+  "hasShownOpus46Notice": {
+    "ffaa327d-c871-41e7-bf0b-6efd6ec8591a": true,
+    "ef36d8be-0ac0-43dd-8194-b9583c944c5a": true
+  },
+  "showSpinnerTree": false,
+  "penguinModeOrgEnabled": false,
+  "clientDataCache": {
+    "data": {},
+    "timestamp": 1771965265507
+  },
+  "opus46FeedSeenCount": 4,
+  "effortCalloutDismissed": true,
+  "hasShownS1MWelcomeV2": {
+    "ef36d8be-0ac0-43dd-8194-b9583c944c5a": true
+  },
+  "sonnet1m45MigrationComplete": true,
+  "cachedExtraUsageDisabledReason": "org_level_disabled",
+  "birthdayHatAnimationCount": 3,
+  "oauthAccount": {
+    "accountUuid": "20062646-013d-4f55-8639-3f857f03522d",
+    "emailAddress": "samuel.levin@mantl.com",
+    "organizationUuid": "ef36d8be-0ac0-43dd-8194-b9583c944c5a",
+    "hasExtraUsageEnabled": false,
+    "billingType": "stripe_subscription",
+    "accountCreatedAt": "2026-01-26T16:53:04.799544Z",
+    "subscriptionCreatedAt": "2026-02-11T23:12:09.685151Z",
+    "displayName": "Sam"
+  },
+  "mcpServers": {
+    "x-darwin-tools": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/samuellevin/.claude/tools/x-darwin/mcp-server/index.mjs"
+      ],
+      "env": {}
+    }
+  }
+}
