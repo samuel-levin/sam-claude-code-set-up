@@ -24,3 +24,5 @@ projects/
 # Keep these tracked:
 # skills/ - Your custom automation skills
 # settings.json - Global settings (if not sensitive)
+
+backups/

@@ -8,7 +8,6 @@
 #   restart.sh application-service
 
 set -euo pipefail
-cd /Users/samuellevin/x-darwin
 
 SERVICE="${1:?Usage: restart.sh <service-name>}"
 

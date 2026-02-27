@@ -8,7 +8,6 @@
 #   build.sh console-api
 
 set -euo pipefail
-cd /Users/samuellevin/x-darwin
 
 PACKAGE="${1:?Usage: build.sh <package-name>}"
 

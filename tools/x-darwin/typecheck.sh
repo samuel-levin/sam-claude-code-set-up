@@ -11,7 +11,6 @@
 #   typecheck.sh client-config
 
 set -euo pipefail
-cd /Users/samuellevin/x-darwin
 
 SERVICE="${1:-}"
 
