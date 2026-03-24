@@ -29,10 +29,12 @@ This skill encodes personal knowledge about the x-darwin repo's structure, idios
    - Client config versioning? → READ [client-config-versioning.md](knowledge/client-config-versioning.md) and FOLLOW the workflow
    - File exports (CSV/PDF)? → READ [file-export-patterns.md](knowledge/file-export-patterns.md)
    - Jira ticket work? → READ [jira-conventions.md](knowledge/jira-conventions.md)
+   - Creating a PR? → READ [jira-conventions.md](knowledge/jira-conventions.md) (PR description format + ticket linking)
    - BFF calling microservices? → READ [bff-microservice-communication.md](knowledge/bff-microservice-communication.md)
    - Application service validation/requirements? → READ [application-service-patterns.md](knowledge/application-service-patterns.md)
    - Field validation/completeness checks? → READ [fields.md](knowledge/fields.md)
    - Self-serve views/routing? → READ [self-serve-patterns.md](knowledge/self-serve-patterns.md)
+   - E2E tests (TestCafe/web-automation)? → READ [e2e-testing.md](knowledge/e2e-testing.md)
 
    When unsure if a file is relevant, read it — better to over-include than miss something.
 

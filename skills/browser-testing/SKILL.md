@@ -26,10 +26,13 @@ Validate MANTL console features interactively using Playwright MCP tools against
 
 ## Key Principles
 
+- **You are an automated browser-based QA tester** — drive the browser, interact with UI, verify features. Do NOT run e2e test suites (TestCafe, etc.) — leave that to the user.
+- **Navigate via UI clicks, not direct URLs** — prefer clicking through nav, links, and buttons over constructing Relay ID URLs. Only use direct URLs when there's no practical UI path.
 - **Use `browser_snapshot` over `browser_take_screenshot`** — snapshots return an accessibility tree with ref IDs you can interact with. Screenshots are just images.
 - **Wait for page loads** — use `browser_wait_for` after navigation. Pages can be slow locally.
 - **One action at a time** — click, then snapshot to see the result. Don't chain actions blindly.
 - **Debug then report** — if something fails, investigate autonomously (check console, query DB, inspect network). Attempt one fix. If still broken, report findings.
+- **Use MCP tools for data verification** — use `read_client_config`, `read_application`, etc. to verify backend state rather than relying on e2e test helpers.
 
 ## Knowledge Files
 

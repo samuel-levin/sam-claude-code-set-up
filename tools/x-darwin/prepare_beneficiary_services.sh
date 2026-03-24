@@ -5,6 +5,7 @@
 # then configures two products:
 #   - consumerChecking: 'beneficiary' as a requiredServiceId
 #   - consumerSavings:  'beneficiariesWithSignatures' as an optionalServiceId
+#   - attestationTypes: 'acceptBeneficiary' with qualifyingScopes ['hasBeneficiary']
 #
 # Usage: prepare_beneficiary_services.sh [client_id]
 #   client_id defaults to d66b0704-1e05-4af1-bb6a-7da565b484fa
@@ -60,8 +61,22 @@ else
   bash "$SCRIPT_DIR/update_client_config.sh" "$CLIENT_ID" "{\"products\":{\"consumerSavings\":{\"optionalServiceIds\":$UPDATED_OPTIONAL}}}"
 fi
 
+# 4. Add 'acceptBeneficiary' attestation with hasBeneficiary qualifying scope
+echo "Adding acceptBeneficiary attestation type..."
+bash "$SCRIPT_DIR/update_client_config.sh" "$CLIENT_ID" '{
+  "attestationTypes": {
+    "acceptBeneficiary": {
+      "title": "Accept Beneficiary",
+      "copy": "You'\''ve agreed to add a beneficiary",
+      "isDisplayedAsCheckboxInSelfServe": true,
+      "qualifyingScopes": ["hasBeneficiary"]
+    }
+  }
+}'
+
 echo ""
 echo "Done! Config now has:"
 echo "  - services.beneficiariesWithSignatures defined"
 echo "  - consumerChecking.requiredServiceIds includes 'beneficiary'"
 echo "  - consumerSavings.optionalServiceIds includes 'beneficiariesWithSignatures'"
+echo "  - attestationTypes.acceptBeneficiary with qualifyingScopes ['hasBeneficiary']"
